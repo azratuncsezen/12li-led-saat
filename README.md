@@ -1,49 +1,62 @@
 # 12'li LED Saat
 
-RTC (gerçek zamanlı saat) modülü ve 12 LED kullanılarak geliştirilen bir elektronik saat projesi.
+RTC (gerçek zamanlı saat) modülünden alınan zaman bilgisini 12 ayrı LED üzerinden gösteren gömülü sistem projesi.
 
-## Projenin amacı
+> **Durum:** Geliştirme aşamasında
 
-Bu projenin amacı, RTC modülünden alınan saat bilgisini 12 LED üzerinden görsel olarak göstermek ve temel gömülü sistem bileşenlerinin birlikte kullanımını uygulamaktır.
+## Proje hakkında
+
+Bu proje; zaman bilgisinin bir RTC modülünden okunması, 12 saatlik formata dönüştürülmesi ve ilgili saati temsil eden LED'in yakılması üzerine kuruludur. Temel amaç, mikrodenetleyici, RTC modülü ve LED çıkışlarını birlikte kullanarak tekrar kurulabilir ve anlaşılır bir elektronik saat geliştirmektir.
 
 ## Çalışma mantığı
 
 1. RTC modülünden güncel saat bilgisi okunur.
 2. Saat bilgisi 12 saatlik gösterime dönüştürülür.
-3. İlgili saati temsil eden LED yakılır.
-4. Gösterim belirli aralıklarla güncellenir.
+3. Saati temsil eden LED belirlenir.
+4. İlgili LED yakılır ve gösterim düzenli aralıklarla güncellenir.
+5. RTC sayesinde elektrik kesintilerinden sonra zaman bilgisi korunur.
 
-## Proje durumu
+## Kullanılan teknolojiler
 
-Proje geliştirme aşamasındadır. Kaynak kod, kullanılan bileşenlerin kesin modelleri, bağlantı şeması ve çalışma görüntüleri tamamlandıkça bu depoya eklenecektir.
+- Mikrodenetleyici tabanlı gömülü sistem geliştirme
+- RTC (gerçek zamanlı saat) modülü
+- LED çıkış kontrolü
+- C/C++ tabanlı mikrodenetleyici programlama
 
-## Eklenecek içerikler
+Kullanılan kart ve RTC modelinin kesin bilgileri proje tamamlandığında bu bölüme eklenecektir.
 
-- [ ] Kullanılan malzemelerin listesi
-- [ ] Devre bağlantı şeması
-- [ ] Mikrodenetleyici kaynak kodu
-- [ ] Kurulum ve yükleme adımları
-- [ ] Prototip fotoğrafları
-- [ ] Kısa çalışma videosu
-- [ ] Karşılaşılan sorunlar ve çözümleri
+## Yol haritası
+
+- [ ] Kullanılan bileşenleri ve teknik özelliklerini belgelemek
+- [ ] Devre bağlantı şemasını eklemek
+- [ ] Mikrodenetleyici kaynak kodunu yayımlamak
+- [ ] Kurulum ve yükleme adımlarını hazırlamak
+- [ ] Prototip fotoğraflarını eklemek
+- [ ] Kısa çalışma videosu hazırlamak
+- [ ] Karşılaşılan sorunları ve çözümlerini belgelemek
+- [ ] Lisans eklemek
 
 ## Planlanan depo yapısı
 
 ```text
 12li-led-saat/
-├── src/          # Kaynak kod
-├── docs/         # Devre şeması ve teknik açıklamalar
+├── src/          # Mikrodenetleyici kaynak kodu
+├── docs/         # Devre şeması ve teknik dokümantasyon
 ├── images/       # Prototip fotoğrafları
-└── README.md
+└── README.md      # Proje açıklaması
 ```
 
 ## Geliştirme hedefleri
 
-- Saat bilgisinin güvenilir biçimde okunması
-- LED gösteriminin doğru güncellenmesi
-- Elektrik kesintisinden sonra RTC saat bilgisinin korunması
-- Devrenin düzenli ve tekrar kurulabilir biçimde belgelenmesi
+- Saat bilgisini güvenilir biçimde okumak
+- LED gösterimini doğru ve kararlı şekilde güncellemek
+- Elektrik kesintilerinden sonra saat bilgisini korumak
+- Devreyi başka kullanıcıların da kurabileceği şekilde belgelemek
+
+## Katkı
+
+Proje geliştirme aşamasındadır. Öneriler ve iyileştirmeler GitHub Issues üzerinden paylaşılabilir.
 
 ## Lisans
 
-Lisans bilgisi proje tamamlanırken eklenecektir.
+Henüz bir lisans seçilmemiştir. Lisans bilgisi proje tamamlanırken eklenecektir.
